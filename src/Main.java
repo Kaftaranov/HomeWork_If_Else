@@ -27,16 +27,31 @@ public class Main {
         System.out.println("-----------------------------------------");
 
         //Задание №3
-        int leapYear = 2300;
-        if (leapYear%4 == 0 && leapYear%100 == 0 && leapYear%400 == 0) {System.out.println("The year "+ leapYear+" is leap. It happens once in 400 years!");}
-        else if (leapYear%4 == 0 && leapYear%100 != 0) {System.out.println("The year "+leapYear+" is leap year.");}
-        else {System.out.println("The year "+leapYear+" is not leap.");}
+        int year = 2021;
+        if (year%4 == 0 && year%100 == 0 && year%400 == 0) {System.out.println("The year "+ year+" is leap. It happens once in 400 years!");}
+        else if (year%4 == 0 && year%100 != 0) {System.out.println("The year "+year+" is leap year.");}
+        else {System.out.println("The year "+year+" is not leap.");}
         System.out.println("-----------------------------------------");
 
         //Задание №4
-
+        int deliveryDistance = 20;
+        short deliveryZone;
+        if (deliveryDistance <= 20) {deliveryZone = 1;}
+        if (deliveryDistance > 20 && deliveryDistance <= 60) {deliveryZone = 2;}
+        if (deliveryDistance > 60 && deliveryDistance <= 100) {deliveryZone = 3;}
+        else {deliveryZone = 4;}
+        switch (deliveryZone)
+        {
+            case 1: System.out.println("Delivery will take 1 day");
+            break;
+            case 2: System.out.println("Delivery will take 2 days");
+            break;
+            case 3: System.out.println("Delivery will take 3 days");
+            break;
+            case 4: System.out.println("We are sorry, but you are out of our delivery service area.");
+            break;}
+        }
     }
 
-}
 
 
