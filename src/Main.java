@@ -25,8 +25,17 @@ public class Main {
             System.out.println("Congratulations! Your device will work properly with our newest application for iOS! You may download it here.");
         }
         System.out.println("-----------------------------------------");
+
+        //Задание №3
+        int leapYear = 2300;
+        if (leapYear%4 == 0 && leapYear%100 == 0 && leapYear%400 == 0) {System.out.println("The year "+ leapYear+" is leap. It happens once in 400 years!");}
+        else if (leapYear%4 == 0 && leapYear%100 != 0) {System.out.println("The year "+leapYear+" is leap year.");}
+        else {System.out.println("The year "+leapYear+" is not leap.");}
+        System.out.println("-----------------------------------------");
+
+        //Задание №4
+
     }
-//Задание №3
 
 }
 
